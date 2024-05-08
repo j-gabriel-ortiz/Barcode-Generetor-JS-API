@@ -15,10 +15,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Barcode Generetor</h1>
+        <h1>Barcode / QR Generetor</h1>
         <input type="text" id="convert-to-code" />
-        <button id="btn-barcode-generator">Barcode Generetor</button>
+        <img src="" alt="Code QR" id="imgQR" class="hidden">
         <svg id="barcode"></svg>
+        <div id="btn-container">
+            <button id="btn-barcode-generator">Barcode</button>
+            <button id="btn-qr-generator">QR</button>
+        </div>
+
     </div>
     
     <script src="script.js"></script>

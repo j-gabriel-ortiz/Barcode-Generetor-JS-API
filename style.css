@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: min(500px,90vw);
+    width: min(600px,90vw);
     background-color: white;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -27,20 +27,28 @@ body {
 h1 {
     font-size: 2em;
     margin-bottom: 1em;
+    text-align: center;
 }
 
 input {
-    width: 60%;
+    width: 100%;
     border: 1px solid black;
     padding: 1em;
     border-radius: 0.7rem;
 }
 
+#btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 button {
     background-color: var(--bg-color);
     color: white;
+    font-weight: 700;
     border: none;
-    width: 38%;
+    width: 30%;
     border-radius: 0.7em;
     padding: 1em;
     font-size: 0.8em;
@@ -48,4 +56,16 @@ button {
 
 svg {
     width: 100%;
+    height: 230px;
+}
+
+img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
 }
